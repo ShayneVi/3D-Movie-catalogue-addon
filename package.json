@@ -1,0 +1,23 @@
+{
+  "name": "stremio-3d-addon",
+  "version": "1.0.0",
+  "description": "Stremio addon — catalogue of 3D movies (Frame Packing, SBS, OU, Anaglyph)",
+  "main": "addon.js",
+  "scripts": {
+    "seed": "node seed_catalogue.js",
+    "fetch": "node fetch_3d_tmdb.js",
+    "scrape": "node scraper.js",
+    "enrich": "node enrich.js",
+    "build": "node seed_catalogue.js && node fetch_3d_tmdb.js",
+    "start": "node addon.js"
+  },
+  "dependencies": {
+    "axios": "^1.15.2",
+    "cheerio": "^1.2.0",
+    "dotenv": "^17.4.2",
+    "stremio-addon-sdk": "^1.6.10"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

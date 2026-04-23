@@ -1,0 +1,4 @@
+node_modules/
+failed_movies.json
+raw_movies.json
+.env

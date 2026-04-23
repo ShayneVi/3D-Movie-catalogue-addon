@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: stremio-3d-addon
+    runtime: node
+    buildCommand: npm install
+    startCommand: node addon.js
+    envVars:
+      - key: PORT
+        generateValue: false
+        value: 10000
